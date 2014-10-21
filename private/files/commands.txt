@@ -1,0 +1,500 @@
+   10  git remote show origin
+   11  cd ..
+   12  cd cloned_hello
+   13  git remote
+   14  git remote show origin
+   15  git branch
+   16  git branch -a
+   17  cd ..
+   18  cd hello
+   19  git branch
+   20  git branch -a
+   21  cd ..
+   22  cd cloned_hello
+   23  cd ../hello
+   24  git add README
+   25  git commit -m "Changed README IN original repo"
+   26  git status
+   27  hist --all
+   28  git hist --all
+   29  cd ../cloned_hello
+   30  git fetch
+   31  git hist --all
+   32  git status
+   33  cat README
+   34  git merge origin/master
+   35  cat README
+   36  git branch --track greet origin/greet
+   37  git branch -a
+   38  git branch -a
+   39  git hist --max-count=2
+   40  git hist
+   41  git hist --all
+   42  git branch
+   43  cd ..
+   44  git clone --bare hello hello.git
+   45  cd hello.git
+   46  ls
+   47  cd ..
+   48  cd hello
+   49  git remote add shared ../hello.git
+   50  git remote
+   51  git checkout master
+   52  git add README
+   53  git commit -m "Added shared comment to readme"
+   54  git status
+   55  git push shared master
+   56  cd ../hello.git
+   57  ls -la
+   58  cd ../cloned_hello
+   59  git remote add shared ../hello.git
+   60  git branch --track shared master
+   61  git pull shared master
+   62  cat README
+   63  cd ..
+   64  git daemon --verbose --export-all --base-path=.
+   65  cd hello
+   66  git push origin master
+   67  cd ..
+   68  cd ..
+   69  cd ..
+   70  ls
+   71  cd cd ruby-book
+   72  cd ruby-book
+   73  git init
+   74  git add .
+   75  git commit -m "Exercises as at 20/10/14
+   76  git status
+   77  git rm .DS_Store
+   78  git rm flipboard.txt
+   79  cat .DS_Store
+   80  git rm .DS_Store
+   81  git rm -f .DS_Store
+   82  ls -a
+   83  git add .
+   84  git status
+   85  git commit -m "Exercises as at 20/10/14"
+   86  git remote add origin https://github.com/ejbyne/facets-of-ruby-exercises.git
+   87  git remote -v
+   88  git push origin master
+   89  cd ..
+   90  cd learn-ruby-the-hard-way
+   91  ls
+   92  cd ruby-the-hard-way
+   93  ls
+   94  git init
+   95  git add .
+   96  git commit -m "Exercises as at 20/10/14"
+   97  git status
+   98  git log
+   99  git remote add origin https://github.com/ejbyne/learn-ruby-the-hard-way-exercises.git
+  100  git push origin master
+  101  cat .DS_Store
+  102  cd ..
+  103  cd SomeDir
+  104  git init
+  105  git add .
+  106  git commit -m "As at 20/10/14"
+  107  git status
+  108  git remote -v
+  109  git remote add origin https://github.com/ejbyne/command-line-walkthrough.git
+  110  git push origin master
+  111  clear
+  112  cd ..
+  113  mkdir command-line
+  114  git init
+  115  echo "This is a list of some useful shell commands" > README
+  116  git add README
+  117  git commit -m "Added README"
+  118  git remote add origin https://github.com/ejbyne/command-line.git
+  119  remote -v
+  120  git remote -v
+  121  git push -u origin master
+  122  ls
+  123  ls -al
+  124  git mv .git command-line
+  125  git mv .git command-line/
+  126  git mv .git command-line/.git
+  127  mv ./.git ./command-line/.git
+  128  ls -la
+  129  cd command-line
+  130  ls -la
+  131  cd ..
+  132  ls
+  133  git mv README command-line/
+  134  mv README command-line
+  135  ls
+  136  cd command-line
+  137  ls
+  138  ls -la
+  139  git status
+  140  touch mv
+  141  git status
+  142  git commit -m "Added mv"
+  143  git add mv
+  144  git commit -m "Added mv"
+  145  git push
+  146  git pull origin master
+  147  ls
+  148  cat mv
+  149  git status
+  150  git log
+  151  touch cp
+  152  git add cp
+  153  git commit-m "Added cp"
+  154  git commit -m "Added cp"
+  155  git push -u origin master
+  156  git pull
+  157  ls
+  158  cat cp
+  159  touch grep
+  160  git add grep
+  161  git commit -m "Added grep"
+  162  git push
+  163  git pull
+  164  cat grep
+  165  touch wc
+  166  push -u origin master
+  167  git push -u origin master
+  168  man wc
+  169  ls
+  170  git push
+  171  git remote -v
+  172  git status
+  173  git add wc
+  174  git commit -m "Added wc"
+  175  git push -u origin master
+  176  git pull
+  177  touch ps
+  178  git add ps
+  179  git commit -m "Added ps"
+  180  git push
+  181  git pull
+  182  git log
+  183  git log
+  184  cd ..
+  185  rm -r command-line
+  186  rm -rf command-line
+  187  ls
+  188  clone https://github.com/ejbyne/command-line.git
+  189  git clone https://github.com/ejbyne/command-line.git
+  190  ls
+  191  cd command-line
+  192  ls -al
+  193  git log
+  194  ls
+  195  rm ps
+  196  ls
+  197  git status
+  198  git rm ps
+  199  git commit -m "Removed ps"
+  200  git push
+  201  clear
+  202  cd ..
+  203  ls
+  204  git clonehttps://github.com/ejbyne/octocat.git
+  205  git clone https://github.com/ejbyne/octocat.git
+  206  ls
+  207  cd octocat
+  208  remote -v
+  209  git remote -v
+  210  cat > clone
+  211  cat clone
+  212  push -u origin master
+  213  git push -u origin master
+  214  cat > upstream
+  215  cat upstream
+  216  ls
+  217  git status
+  218  rm upstream
+  219  git add clone
+  220  git commit -m "Added clone"
+  221  git push -u origin master
+  222  cat > upstream
+  223  rm upstream
+  224  vi clone
+  225  rm clone
+  226  touch clone
+  227  echo "Explain what git clone does, in your own words" > clone
+  228  cat clone
+  229  git add clone
+  230  git commit -m "Added clone"
+  231  git push -u origin master
+  232  git log
+  233  git reset --hard 80b619ae
+  234  git push
+  235  git log
+  236  clear
+  237  cd
+  238  cd Projects
+  239  git clone git@github.com/ejbyne/rock-paper-scissors.git
+  240  git clone git@github.com./
+  241  git clone git@github.com/ejbyne/rock-paper-scissors-js.git
+  242  git clone git@github.com:ejbyne/rock-paper-scissors-js.git
+  243  cd rock-paper-scissors-js
+  244  ls
+  245  subl .
+  246  open README.MD
+  247  git status
+  248  git add -A
+  249  git commit -m "Updated README"
+  250  git push
+  251  cd ..
+  252  mkdir ruby-demo
+  253  cd ruby-demo
+  254  mkdir lib
+  255  mkdir spec
+  256  touch lib/car.rb
+  257  touch spec/car_spec.rb
+  258  rspec
+  259  gem install rspec
+  260  rspec
+  261  rspec
+  262  rspec
+  263  rspec
+  264  rspec
+  265  rspec
+  266  rspec
+  267  rspec
+  268  rspec
+  269  rspec
+  270  rspec
+  271  rspec
+  272  irb
+  273  git.init
+  274  git init
+  275  git add -a
+  276  git add -A
+  277  git commit -m "Pair programming with Denise Yu"
+  278  git remote add https://github.com/ejbyne/ruby-demo.git
+  279  git push -u origin master
+  280  git remote add origin https://github.com/ejbyne/ruby-demo.git
+  281  remote -v
+  282  git remote -v
+  283  git push -u origin master
+  284  clear
+  285  cd ..
+  286  ls
+  287  rm -r octocat
+  288  rm -rf octocat
+  289  ls
+  290  git clone https://github.com/ejbyne/octocat.git
+  291  ls
+  292  cd octocat
+  293  echo "Explain what git clone does, in your own words" > clone
+  294  add clone
+  295  git add clone
+  296  git commit -m "Added clone question"
+  297  git remote add origin https://github.com/ejbyne/octocat.git
+  298  git push -u origin master
+  299  push -u origin master
+  300  git push -u origin master
+  301  echo 'Explain what the "upstream" remote is usually used for, in your own words' > upstream
+  302  git add upstream
+  303  git commit -m "Added upstream question"
+  304  git push
+  305  echo "Explain what a branch is, in your own words" > branch
+  306  git add branch
+  307  git commit -m "Added branch question"
+  308  git push
+  309  git branch answers
+  310  git branch
+  311  git checkout answers
+  312  git branch
+  313  git add clone
+  314  git commit -m "Added clone answer"
+  315  git push origin answers
+  316  git add upstream
+  317  git commit -m "Added upstream answer"
+  318  git push origin answers
+  319  cat branch
+  320  git add branch
+  321  git commit -m "Added branch answer"
+  322  git push origin answers
+  323  cd ..
+  324  git clone https://github.com/ejbyne/the-cat.git
+  325  cd the-cat
+  326  git remote -v
+  327  cd ..
+  328  cd octocat
+  329  git push origin master
+  330  cd ..
+  331  cd the-cat
+  332  git remote add upstream https://github.com/makersacademy/the-cat.git
+  333  git remote -v
+  334  ls
+  335  mkdir Bolivia
+  336  touch Bolivia/Sucre
+  337  cd Bolivia
+  338  ls
+  339  cat Sucre
+  340  push origin master
+  341  git push origin master
+  342  git status
+  343  ls
+  344  cd ..
+  345  ls
+  346  git add Bolivia
+  347  git add -A
+  348  git commit -m "Added Bolivia"
+  349  git push origin master
+  350  clear
+  351  cd ..
+  352  cd ~
+  353  pwd
+  354  cd Projects
+  355  mkdir New
+  356  cd New
+  357  touch newFile
+  358  mv newFile ../
+  359  ls
+  360  cd .
+  361  cd ..
+  362  ls
+  363  mv newFile New
+  364  ls
+  365  cd New
+  366  ls
+  367  pwd
+  368  cd ..
+  369  ls
+  370  cd Challenge 1
+  371  cd "Challenge 1"
+  372  ls
+  373  cd "Text Files"
+  374  ls
+  375  cd .
+  376  cd ..
+  377  cd .
+  378  cd ..
+  379  ls
+  380  rm -r New
+  381  cd "Challenge 1"
+  382  ls
+  383  mkdir New
+  384  touch newFile
+  385  mv newFile New
+  386  ls
+  387  cd New
+  388  ls
+  389  cd ..
+  390  pwd
+  391  cd "Text Files:
+  392  cd "Text Files"
+  393  ls
+  394  cd .
+  395  cd ..
+  396  mkdir -p Foo/Bar/folders
+  397  ls
+  398  cd Foo/Bar/folders
+  399  cd ..
+  400  cd ..
+  401  cd ..
+  402  ls
+  403  ls -l
+  404  rmdir "Empty Folder"
+  405  ls
+  406  rm New
+  407  rmdir New
+  408  rm -r New
+  409  ls
+  410  cd "Text Files"
+  411  ls
+  412  cp "More Text" "Learn to code"
+  413  cp "More Text.txt" "Learn to code.txt"
+  414  head -5 "Learn to code.txt"
+  415  tail -5 "Learn to code.txt"
+  416  cat "Learn to code.txt"
+  417  grep a "Learn to code.txt"
+  418  grep text "Learn to code.txt"
+  419  grep essay "Learn to code.txt"
+  420  grep essay *.txt
+  421  grep code *.txt
+  422  grep essay "Learn to code.txt"
+  423  touch blank
+  424  ls *.txt
+  425  ls
+  426  wc -l "Learn to code.txt"
+  427  wc -w "Less text.txt"
+  428  cat "Less text.txt"
+  429  ls | grep *.txt | wc -l
+  430  ls | grep txt | wc -l
+  431  ls
+  432  ls | grep "*.txt" | wc -l
+  433  cd ~
+  434  find . -name "b*" -print
+  435  man wc
+  436  env
+  437  export DAY=Tuesday
+  438  echo $DAY
+  439  echo "export SEASON=winter" >> ~/.bash_profile
+  440  cat ~/.bash_profile
+  441  cd Projects/"Challenge 1"/"Text Files"
+  442  ls
+  443  ls -l
+  444  chmod g+w "More text.txt"
+  445  chmod o-r "More text.txt"
+  446  ls -l
+  447  cd ..
+  448  mkdir "No Change"
+  449  ls -l
+  450  chmod a-x "No Change"
+  451  ls -l
+  452  cd "No Change"
+  453  echo 'Hello, world!'
+  454  echo "Hello, world! "
+  455  touch hello.rb
+  456  cat > hello.rb
+  457  cat hello.rb
+  458  cat > hello.rb
+  459  cat hello.rb
+  460  ruby hello.rb
+  461  ./hellor.b
+  462  ./hello.rb
+  463  chmod u+x hello.rb
+  464  ./hello.rb
+  465  vi hello.rb
+  466  ./hello.rb
+  467  env
+  468  head `which irb`
+  469  which ruby
+  470  ./hello.rb
+  471  ps x
+  472  ps x | grep chrome
+  473  ps x
+  474  ps x | grep chrome
+  475  ps x | grep "Google Chrome" | wc-l
+  476  ps x | grep "Google Chrome" | wc -l
+  477  ps x | grep "Google Chrome" | wc -l > chrome.list
+  478  cat chrome.list
+  479  man mkdir
+  480  git init
+  481  git add -A
+  482  git commit -m "Completed exercises"
+  483  git remote add origin https://github.com/ejbyne/command-line-exercises.git
+  484  git push origin master
+  485  clear
+  486  cd ..
+  487  mkdir -p my/private/files
+  488  mkdir -p my/public/files
+  489  touch my/private/files/t-vars.env
+  490  cd my/private/files
+  491  cat > t-vars.env
+  492  cat t-vars.env
+  493  env | grep ^T*
+  494  env | grep ^T
+  495  env | grep ^T >> t-vars.env
+  496  cat t-vars.env
+  497  echo "export TESTING_MAKERS=working" >> ~/.bash_profile
+  498  cat ~/.bash_profile
+  499  env
+  500  env
+  501  cd Projects/my/private/files
+  502  touch first-three-env.txt
+  503  env | sort | head -3
+  504  env
+  505  env | sort | head -3 >> first-three-env.txt
+  506  cat first-three-env.txt
+  507  touch commands.txt
+  508  history
+  509  history >> commands.txt
